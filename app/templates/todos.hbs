@@ -1,3 +1,8 @@
 <h1>A list of Todo Tasks</h1>
+<ul>
+{{#each model as |todo|}}
+<li>{{#link-to "todos.details" todo}}{{todo.desc}}{{/link-to}}</li>
+{{/each}}
+</ul>
 
 {{outlet}}

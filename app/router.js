@@ -10,7 +10,9 @@ Router.map(function() {
   this.route('parent');
 
   this.route('parent.child',{path : "parent/child"});
-  this.route('todos');
+  this.route('todos', function() {
+    this.route('details',{path : "/:id"});
+  });
 });
 
 export default Router;

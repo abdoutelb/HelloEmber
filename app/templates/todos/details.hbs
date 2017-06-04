@@ -1,0 +1,12 @@
+<h2>The Details for <span style="color: green;">{{model.name}}</span> is : </h2>
+{{#if model.error}}
+<p>{{model.message}}</p>
+{{else}}
+<ul>
+ {{#each model.steps as |task|}}
+    <li>{{task.do}}</li>
+    {{/each}}
+</ul>
+{{/if}}
+
+{{outlet}}
