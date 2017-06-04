@@ -1,9 +1,12 @@
 {{#unless showName}}
-<h2 id="title">Welcome Ember World !!</h2>
+<h2 id="title">Welcome  {{name}} !!</h2>
 {{else}}
-<h2 id=title> Welcome {{name}}</h2>
+<h2 id=title> Welcome Ember World, This is a kitchen sink for testing ember</h2>
 {{/unless}}
 
 
 {{outlet}}
-{{link-to "About" "about"}}
+{{link-to "Home" "index"}}<br/>
+{{link-to "About" "about"}} <br/>
+{{link-to "Parent" "parent"}} <br/>
+{{link-to "To Do Tasks" "todos"}}<br/>

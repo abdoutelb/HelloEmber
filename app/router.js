@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('parent');
 
   this.route('parent.child',{path : "parent/child"});
+  this.route('todos');
 });
 
 export default Router;
+ 
