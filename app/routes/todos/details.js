@@ -2,7 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
     model(params){
-        
         if(params.id == "1"){
             return {
                 name : "Ember SetUp",
